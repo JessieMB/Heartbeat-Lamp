@@ -5,6 +5,8 @@ import requests
 import json
 import itertools
 
+#Can't get Firebase package installed on Raspbian; working around using requests
+
 firebase_url = "https://ldr-app-85d9a.firebaseio.com/%3Ctype%20'int'%3E/bpm/-L4UczUZraRXeAY6l2m7/bpm.json?print=pretty&format=export&download=ldr-app-85d9a-bpm-export.json"
 r = requests.get(firebase_url)
 pulseArray = ""
